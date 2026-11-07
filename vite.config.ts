@@ -10,8 +10,8 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GITHUB_PAGES=true builds a static single-page app for GitHub Pages (set only in CI).
-const pages = process.env.GITHUB_PAGES === "true";
-const base = process.env.BASE_PATH || "/";
+const pages = process.env["GITHUB_PAGES"] === "true";
+const base = process.env["BASE_PATH"] || "/";
 
 export default defineConfig({
   tanstackStart: {
