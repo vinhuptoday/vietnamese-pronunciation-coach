@@ -265,7 +265,7 @@ function Testimonials() {
               <Quote className="h-8 w-8 text-primary/40" />
               <blockquote className="mt-4 text-lg leading-relaxed">“{q}”</blockquote>
               <figcaption className="mt-6 flex items-center gap-3">
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-primary-soft font-bold text-primary">{n.split(" ").pop()?.[0]}</span>
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-primary-soft font-bold text-primary">{n?.split(" ").pop()?.[0]}</span>
                 <span><b className="block">{n}</b><span className="text-sm text-muted-foreground">{r}</span></span>
               </figcaption>
             </figure>
